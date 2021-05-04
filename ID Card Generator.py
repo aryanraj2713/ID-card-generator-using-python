@@ -2,7 +2,7 @@
 """
 Created on Fri Aug 14 06:39:07 2020
 
-@author: Nareshsarathy S
+@author: Aryan raj
 """
 
 from PIL import Image, ImageDraw, ImageFont
