@@ -161,7 +161,7 @@ with open('data.csv','a') as csvfile:
 csvfile.close()
 
 ```
-#Taking Input from User-
+# Taking Input from User-
 
 ![Input from user](https://github.com/aryanraj2713/ID-card-generator-using-python/blob/main/input.jpg)
 
