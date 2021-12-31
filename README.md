@@ -171,6 +171,18 @@ csvfile.close()
 
 *Input details are saved in data.csv also for further reffrence*
 
+## Contribution 
+
+Contributions are always welcome! You can contribute to this project in the following way:
+- [ ] Adding feature to add image to ID card 
+- [ ] Bug fixes
+- [ ] hosting using application
+
+## Author
+
+* Aryan Raj
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/) by [Aryan Raj](https://www.linkedin.com/in/aryan-raj-3a68b39a/)
 
 
 
