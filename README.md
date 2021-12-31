@@ -2,13 +2,14 @@
 Generates ID card with all details for organization/school and gives png image of ID card and save resord in csv file
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Some Libraries need to be installed in order to use-
->from PIL import Image, ImageDraw, ImageFont
+>pip install PIL
 >
->import random
+>pip install random
 >
->import os
+>pip install os
 >
->import datetime
+>pip install datetime
 >
->import textwrap
->
+>pip install textwrap
+
+! usually some of them are preinstalled but we can re-check once.
