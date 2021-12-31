@@ -3,7 +3,12 @@ Generates ID card with all details for organization/school and gives png image o
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Some Libraries need to be installed in order to use-
 >from PIL import Image, ImageDraw, ImageFont
+>
 >import random
+>
 >import os
+>
 >import datetime
+>
 >import textwrap
+>
