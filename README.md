@@ -162,6 +162,8 @@ csvfile.close()
 
 ```
 
+![Input from user](https://github.com/aryanraj2713/ID-card-generator-using-python/blob/main/input.jpg)
+
 
 
 
