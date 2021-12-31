@@ -169,7 +169,7 @@ csvfile.close()
 
 ![Id card](https://github.com/aryanraj2713/ID-card-generator-using-python/blob/main/Aryan%20Raj.png)
 
-[1^] Input details are saved in data.csv also for further reffrence
+*Input details are saved in data.csv also for further reffrence*
 
 
 
