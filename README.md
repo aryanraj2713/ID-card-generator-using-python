@@ -12,14 +12,18 @@ Some Libraries need to be installed in order to use-
 >
 >pip install textwrap
 
+>pip install csv
+
+
+
  usually some of them are preinstalled but we can re-check once
  
- # Code
+ # Code-
  
- ## Setting up image boiler-plate
+ ## Setting up image boiler-plate -
  
  ```
- from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 image=Image.new('RGB',(1000,900),(255,255,255))
 draw=ImageDraw.Draw(image)
 font=ImageFont.truetype('arial.ttf', size=45)
@@ -45,6 +49,133 @@ font=ImageFont.truetype('arial.ttf',size=80)
 draw.text((x,y),message,fill=color,font=font)
 
 ```
+## Giving every ID card a unique number-
+
+```
+(x,y)=(600,75)
+idno=random.randint(1000000,9000000)
+message=str('ID'+str(idno))
+color='rgb(0,0,0)'
+font=ImageFont.truetype('arial.ttf',size=60)
+draw.text((x,y),message,fill=color,font=font)
+
+```
+## Setting up details on PNG image-
+
+```
+(x,y)=(50,150)
+name='Name'
+color='rgb(255,0,0)'
+draw.text((x,y),name,fill=color,font=font)
+
+(x,y)=(50,220)
+
+message=input('Enter your full Name:')
+name=message
+
+color='rgb(0,0,0)'
+font=ImageFont.truetype('arial.ttf',size=60)
+draw.text((x,y),message,fill=color,font=font)
+
+
+(x,y)=(45,300)
+gen='Branch'
+color='rgb(255,0,0)'
+draw.text((x,y),gen,fill=color,font=font)
+
+(x,y)=(50,350)
+branch=input('Enter Your School Branch:')
+color="rgb(0,0,0)"
+draw.text((x,y),branch,fill=color,font=font)
+
+(x,y)=(300,300)
+sem='Term'
+color='rgb(255,0,0)'
+draw.text((x,y),sem,fill=color,font=font)
+(x,y)=(300,350)
+
+age=input('Enter Your Term:')
+color='rgb(0,0,0)'
+draw.text((x,y),age,fill=color,font=font)
+
+
+(x,y)=(50,420)
+dobir='Date of Birth'
+color='rgb(255,0,0)'
+draw.text((x,y),dobir,fill=color,font=font)
+
+(x,y)=(60,470)
+dob=input("Enter your DOB:")
+color='rgb(0,0,0)'
+draw.text((x,y),dob,fill=color,font=font)
+
+
+(x,y)=(50,530)
+bd='Blood Group'
+color='rgb(255,0,0)'
+draw.text((x,y),bd,fill=color,font=font)
+
+(x,y)=(50,580)
+bgrp=input('Enter Blood Group:')
+color='rgb(0,0,0)'
+draw.text((x,y),bgrp,fill=color,font=font)
+
+(x,y)=(50,640)
+mb='Mobile No'
+color='rgb(255,0,0)'
+draw.text((x,y),mb,fill=color,font=font)
+
+(x,y)=(50,690)
+mo=input("Enter your Mobile Number:")
+temp=mo
+color='rgb(0,0,0)'
+draw.text((x,y),mo,fill=color,font=font)
+
+
+(x,y)=(50,740)
+ad='Address'
+color='rgb(255,0,0)'
+draw.text((x,y),ad,fill=color,font=font)
+
+(x,y)=(50,800)
+add=input('Enter Your Address:')
+color='rgb(0,0,0)'
+draw.text((x,y),add,fill=color,font=font)
+
+```
+## Saving PNG image-
+
+```
+image.save(str(name)+'.png')
+
+```
+## Saving Data in a csv file
+
+```
+import csv
+row=[str(idno),str(name),str(gen),str(age),str(dobir),str(bgrp),str(mo),str(add)]
+with open('data.csv','a') as csvfile:
+    writer=csv.writer(csvfile)
+    writer.writerow(row)
+
+csvfile.close()
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
