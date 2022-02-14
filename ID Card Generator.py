@@ -31,7 +31,7 @@ font=ImageFont.truetype('arial.ttf',size=80)
 draw.text((x,y),message,fill=color,font=font)
 
 
-#adding an unique number. You can manually take it from user
+
 (x,y)=(600,75)
 idno=random.randint(1000000,9000000)
 message=str('ID'+str(idno))
